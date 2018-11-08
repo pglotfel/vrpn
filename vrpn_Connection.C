@@ -2407,7 +2407,7 @@ static int vrpn_poll_for_accept(SOCKET listen_sock, SOCKET *accept_sock,
             struct protoent *p_entry;
             int nonzero = 1;
 
-            if ((p_entry = getprotobyname("TCP")) == NULL) {
+            if ((p_entry = getprotobyname("tcp")) == NULL) {
                 fprintf(stderr,
                         "vrpn_poll_for_accept: getprotobyname() failed.\n");
                 vrpn_closeSocket(*accept_sock);
