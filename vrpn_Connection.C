@@ -3643,7 +3643,7 @@ int vrpn_Endpoint_IP::connect_tcp_to(const char *addr, int port)
         struct protoent *p_entry;
         int nonzero = 1;
 
-        if ((p_entry = getprotobyname("TCP")) == NULL) {
+        if ((p_entry = getprotobyname("tcp")) == NULL) {
             fprintf(
                 stderr,
                 "vrpn_Endpoint::connect_tcp_to: getprotobyname() failed.\n");
